@@ -3,7 +3,10 @@ import About from "./About";
 import Products from "./Products";
 import MyForm from "./MyForm";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 function MyNav() {
     return (
@@ -20,8 +23,8 @@ function MyNav() {
 }
 
 function SetNav() {
-    return(
-        <Navbar bg="light" expand="lg" data-bs-theme="dark" className = "bg-body-tertiary">
+    return (
+        <Navbar expand="lg" bg="light" data-bs-theme="dark" className = "bg-body-tertiary">
             <Container>
                 <Navbar.Brand as={Link} to="/home">Puma-Bootstrap</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
